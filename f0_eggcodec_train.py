@@ -350,14 +350,14 @@ if __name__ == "__main__":
     eval_epochs = 1
     lr = 1e-3
     opt_args = ArgsDef.optimizer_args_cls(optimizer_name='AdamW',
-                                          k=5, # k折交叉验证
-                                            batch_size=32,# 批处理大小
-                                            eval_epochs=1,# 训练时评估频率
-                                            save_epochs=save_epochs,# 保存频率
-                                            num_train_epochs=20,# 训练轮数
-                                            record_epochs=1,# 记录频率
-                                            lr=lr,    # 初始学习率
-                                            shuffle=True) # 是否打乱数据集
+                                          k=5, 
+                                            batch_size=32,
+                                            eval_epochs=1,
+                                            save_epochs=save_epochs,
+                                            num_train_epochs=20,
+                                            record_epochs=1,
+                                            lr=lr,    
+                                            shuffle=True) 
     
     if  use_gan == 'true':
         extra_gan = 'use_gan'
